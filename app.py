@@ -1,6 +1,9 @@
 import streamlit as st
 from PIL import Image
 import time
+from src.agent import build_chef_agent
+
+chef_agent = build_chef_agent()
 
 # --- Configuração da Página ---
 st.set_page_config(
@@ -51,7 +54,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Funções Auxiliares (Mockup da IA) ---
-def mock_analyze_image(image):
+def analyze_image(image):
     """Simula a análise da imagem (substitua pela sua lógica do LangChain)"""
     time.sleep(2) # Simula delay de processamento
     return ["Ovos", "Tomate", "Queijo Parmesão", "Manjericão"]
@@ -121,7 +124,13 @@ if uploaded_file is not None:
         
         with st.spinner("O Chef está analisando seus ingredientes..."):
             # Passo 1: Visão
-            detected_ingredients = mock_analyze_image(uploaded_file)
+            
+            config = {"configurable": {"thread_id": "user_session_123"}}
+            
+            response = chef_agent.invoke(
+                    {"messages": [("user", image)]},
+                    config=config
+                )   
             st.session_state.ingredients = detected_ingredients
             
             # Adiciona mensagem do sistema ao chat
