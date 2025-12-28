@@ -13,4 +13,5 @@ dependencies = [
     "langsmith>=0.5.0",
     "streamlit>=1.52.2",
     "tavily>=1.1.0",
+    "watchdog>=6.0.0",
 ]
