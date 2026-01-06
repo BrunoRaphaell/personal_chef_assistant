@@ -1,10 +1,8 @@
 # 👨‍🍳 Personal Chef Assistant
 
-O **Personal Chef Assistant** é uma aplicação inteligente que transforma o conteúdo da sua geladeira em receitas deliciosas. Basta enviar uma foto dos seus ingredientes e o assistente, agindo como um Chef profissional, irá sugerir pratos personalizados.
+O **Personal Chef Assistant** é uma aplicação inteligente que transforma o conteúdo da sua geladeira em receitas deliciosas. Basta enviar uma foto dos seus ingredientes e o assistente irá sugerir pratos personalizados.
 
 ## 🚀 Tecnologias Utilizadas
-
-Este projeto demonstra o uso de tecnologias modernas de Engenharia de IA, com foco em interatividade e manutenção de contexto:
 
 - **[Streamlit](https://streamlit.io/)**: Framework Python utilizado para construir toda a interface web de forma ágil e eficiente.
 - **[LangChain](https://www.langchain.com/) & [LangGraph](https://langchain-ai.github.io/langgraph/)**: O "cérebro" da aplicação. Utilizamos LangGraph para orquestrar o fluxo do agente.
@@ -33,7 +31,7 @@ Isso possibilita uma conversa fluida onde o assistente lembra:
 
 1. **Clone o repositório** e entre na pasta:
    ```bash
-   git clone <seu-repo>
+   git clone https://github.com/BrunoRaphaell/personal_chef_assistant.git
    cd personal_chef_assistant
    ```
 
