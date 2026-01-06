@@ -11,6 +11,3 @@ wheels/
 
 # Variables environment
 .env
-
-# Ignore images folder
-images
