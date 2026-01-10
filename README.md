@@ -1,7 +1,5 @@
 # 👨‍🍳 Personal Chef Assistant
 
-O **Personal Chef Assistant** é uma aplicação inteligente que transforma o conteúdo da sua geladeira em receitas deliciosas. Basta enviar uma foto dos seus ingredientes e o assistente irá sugerir pratos personalizados.
-
 ## 🚀 Tecnologias Utilizadas
 
 - **[Streamlit](https://streamlit.io/)**: Framework Python utilizado para construir toda a interface web de forma ágil e eficiente.
